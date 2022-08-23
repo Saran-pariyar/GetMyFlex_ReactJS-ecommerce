@@ -1,7 +1,11 @@
 import React from "react";
 
 const HeroSection = () => {
-  return <section>HeroSection</section>;
+  return (
+    <section>
+      <a href="https://www.etelligens.com/">Click to see demo</a>
+    </section>
+  );
 };
 
 export default HeroSection;

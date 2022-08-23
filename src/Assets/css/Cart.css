@@ -1,0 +1,13 @@
+.cart-section {
+    height: 100%;
+    width: 50vw;
+    background-color: red;
+    position: fixed;
+    right: -100%;
+    transition: all 0.4s;
+    overflow: scroll;
+}
+
+.show-cart {
+    right: 0;
+}

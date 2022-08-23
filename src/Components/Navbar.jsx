@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../Assets/css/Navbar.css";
+import { AiOutlineShopping } from "react-icons/ai";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [cart, setShowCart] = useState(false);
+
+  const navlink_paths = [
+    { path: "/", title: "home" },
+    { path: "product", title: "Products" },
+    { path: "about", title: "About" },
+  ];
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -17,32 +25,26 @@ const Navbar = () => {
           <div className="line"></div>
         </div>
         <ul className={`nav-list ${showMenu ? "showMenu" : ""}`}>
+          {navlink_paths.map((item, index) => {
+            //iterating over navitems
+            return (
+              <li key={index}>
+                <NavLink
+                  to={item.path}
+                  className="nav-link"
+                  onClick={() => setShowMenu(false)}
+                >
+                  {item.title}
+                </NavLink>
+              </li>
+            );
+          })}
           <li>
-            <NavLink
-              to="/"
-              className="nav-link"
-              onClick={() => setShowMenu(false)}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              className="nav-link"
-              onClick={() => setShowMenu(false)}
-            >
-              About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className="nav-link"
-              onClick={() => setShowMenu(false)}
-            >
-              Contact
-            </NavLink>
+            <AiOutlineShopping
+              className="nav-link "
+              id="shopping-cart"
+              onClick={() => setShowCart(false)}
+            />
           </li>
         </ul>
       </div>
