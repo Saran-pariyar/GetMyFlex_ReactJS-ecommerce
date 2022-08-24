@@ -66,6 +66,10 @@
     font-size: 2rem;
 }
 
+#shopping-cart:hover {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
     .nav-list {
         position: fixed;
@@ -109,5 +113,12 @@
     .logo {
         font-size: 1.5rem;
         top: 0.5rem;
+    }
+
+    /* When we're on mobile, cart icon will be on top  */
+    #shopping-cart {
+        position: fixed;
+        top: -0.7rem;
+        right: 4rem;
     }
 }

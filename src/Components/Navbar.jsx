@@ -3,12 +3,13 @@ import { NavLink } from "react-router-dom";
 import "../Assets/css/Navbar.css";
 import { AiOutlineShopping } from "react-icons/ai";
 
-const Navbar = () => {
+const Navbar = ({ cart, setShowCart }) => {
+  //used to sow or hide menu
   const [showMenu, setShowMenu] = useState(false);
-  const [cart, setShowCart] = useState(false);
 
+  //we use it to iterate over nav-items and use less html for nav-links
   const navlink_paths = [
-    { path: "/", title: "home" },
+    { path: "/", title: "Home" },
     { path: "product", title: "Products" },
     { path: "about", title: "About" },
   ];
@@ -26,7 +27,7 @@ const Navbar = () => {
         </div>
         <ul className={`nav-list ${showMenu ? "showMenu" : ""}`}>
           {navlink_paths.map((item, index) => {
-            //iterating over navitems
+            //iterating over 3 nav-items
             return (
               <li key={index}>
                 <NavLink
@@ -43,7 +44,7 @@ const Navbar = () => {
             <AiOutlineShopping
               className="nav-link "
               id="shopping-cart"
-              onClick={() => setShowCart(false)}
+              onClick={() => (cart ? setShowCart(false) : setShowCart(true))}
             />
           </li>
         </ul>

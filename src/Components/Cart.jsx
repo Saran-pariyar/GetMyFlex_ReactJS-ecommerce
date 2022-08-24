@@ -1,6 +1,12 @@
 import "../Assets/css/Cart.css";
-const Cart = () => {
-  return <section className="cart-section">Cart</section>;
+
+const Cart = ({ cart }) => {
+  return (
+    <div className={`cart-section ${cart ? " show-cart " : ""}`}>
+      <p style={{ color: "white" }}>hello</p>
+      {cart}
+    </div>
+  );
 };
 
 export default Cart;
