@@ -4,7 +4,12 @@
 
 .navbar {
     height: 3rem;
+    position: sticky;
+    top: 0;
+    background-color: #060736;
+    z-index: 10;
 }
+
 
 .navbar .navbar-container {
     display: flex;
@@ -31,10 +36,44 @@
     align-items: center;
 }
 
-.nav-list .nav-link {
+
+/* hover  */
+
+
+.nav-link {
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    /* position: relative; */
+    overflow: hidden;
     color: #f1e1e1;
     font-size: 1.2rem;
 }
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #f6f9fa;
+    height: 4px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.nav-link:hover:before,
+.nav-link:focus:before,
+.nav-link:active:before {
+    right: 0;
+}
+
+
+
 
 .nav-list li {
     display: inline-block;
@@ -44,9 +83,9 @@
     align-items: center;
 }
 
-.active {
-    text-decoration: underline;
-}
+/* .active { */
+/* text-decoration: underline; */
+/* } */
 
 .ham-icon {
     position: absolute;
@@ -88,6 +127,7 @@
         flex-direction: column;
         transition: all 0.4s;
         overflow: scroll;
+        z-index: 9999;
     }
 
     .showMenu {

@@ -1,17 +1,19 @@
 .hero-section {
     padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .main-hero-section {
     color: white;
     background: url("../img/neon_woman.jpg"), rgba(10, 10, 10, 0.45);
-    height: 85vh;
+    height: 80vh;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-blend-mode: darken;
     border: 2px solid white;
     border-radius: 10px;
@@ -21,7 +23,6 @@
 .heading {
     color: #ffffff;
     font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
     padding: .5rem;
 }
 
@@ -29,12 +30,69 @@
     color: #e71336;
 }
 
+/* button  */
+.explore-btn {
+    color: #fff;
+    padding: .5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    font-size: 1.2rem;
+    background: #fff;
+    border: 2px solid #e71336;
+    color: #e71336;
+    width: 7rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.explore-btn:hover {
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.explore-btn:hover:after {
+    width: 100%;
+}
+
+.explore-btn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #e71336;
+}
+
+/* button  */
+
+
 @media only screen and (max-width:800px) {
     .main-hero-section {
         justify-content: center;
+        background-color: rgba(59, 58, 58, 0.9);
+        align-items: center;
+        height: auto;
+
     }
 
     .heading {
         text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .heading span {
+        font-size: 1.8rem;
+    }
+
+    .explore-btn {
+        font-size: 1.1rem;
     }
 }

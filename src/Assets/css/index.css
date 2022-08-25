@@ -5,5 +5,29 @@
 }
 
 body {
+    height: 200vh;
     background-color: #060736;
+}
+
+/* for scrollbar  */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e71336;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e71336;
+
 }
