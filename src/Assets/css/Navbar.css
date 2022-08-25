@@ -16,9 +16,9 @@
     width: 50%;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 800;
     position: relative;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
     left: 1rem;
 }
 
@@ -70,6 +70,11 @@
     cursor: pointer;
 }
 
+/* this will only appear in mobile  */
+#mobile-shopping-cart {
+    display: none;
+}
+
 @media only screen and (max-width: 800px) {
     .nav-list {
         position: fixed;
@@ -115,10 +120,17 @@
         top: 0.5rem;
     }
 
-    /* When we're on mobile, cart icon will be on top  */
     #shopping-cart {
-        position: fixed;
-        top: -0.7rem;
-        right: 4rem;
+        display: none;
+    }
+
+    /* this will only appear in mobile  */
+    #mobile-shopping-cart {
+        color: white;
+        font-size: 1.8rem;
+        display: block;
+        top: .5rem;
+        position: relative;
+
     }
 }

@@ -1,0 +1,39 @@
+.hero-section {
+    padding: 1rem;
+
+}
+
+.main-hero-section {
+    color: white;
+    background: url("../img/neon_woman.jpg"), rgba(10, 10, 10, 0.45);
+    height: 85vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-blend-mode: darken;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading span {
+    color: #e71336;
+}
+
+@media only screen and (max-width:800px) {
+    .main-hero-section {
+        justify-content: center;
+    }
+
+    .heading {
+        text-align: center;
+    }
+}
