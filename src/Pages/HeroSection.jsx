@@ -6,6 +6,7 @@ const HeroSection = () => {
     <section className="hero-section">
       {/* <a href="https://www.etelligens.com/" style>Click to see demo</a> */}
       <div className="main-hero-section">
+        <h1 className="heading">GetMyFlex!</h1>
         <h1 className="heading">
           The shop for the <br />
           <span> #Genz</span>

@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # other 
-Learn.txt
-Tasks.txt
+./Learn.txt
+./Tasks.txt
