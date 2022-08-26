@@ -1,3 +1,7 @@
-1. build side cart working
-2. make hero section
-3. make search bar
+4. Learn and use dummy api (learn to select products based on their categories) - ( https://dummyjson.com/docs/products )
+3. make categories section after the herosection which will send us to categories that we selected
+1. build side cart working - (make the number apper in cart)
+
+make the send message form working in portfolio website and also add projects/works in it, it will be checked !!
+
+Leran firebase and user authentication
