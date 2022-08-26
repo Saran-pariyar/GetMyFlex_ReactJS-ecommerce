@@ -1,5 +1,5 @@
-4. Learn and use dummy api (learn to select products based on their categories) - ( https://dummyjson.com/docs/products )
 3. make categories section after the herosection which will send us to categories that we selected
+4. Learn and use dummy api (learn to select products based on their categories) - ( https://dummyjson.com/docs/products )
 1. build side cart working - (make the number apper in cart)
 
 make the send message form working in portfolio website and also add projects/works in it, it will be checked !!
