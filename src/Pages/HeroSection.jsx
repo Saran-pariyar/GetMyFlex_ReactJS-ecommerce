@@ -6,9 +6,9 @@ import sunglasses from "../Assets/img/sunglass.jpg";
 
 const HeroSection = () => {
   const categories = [
-    { smartphones: mobile },
-    { laptops: mac },
-    { sunglasses: sunglasses },
+    { title: "SmartPhones", img: mobile },
+    { title: "Laptop", img: mac },
+    { title: "Sunglasses", img: sunglasses },
   ];
   // smartphones', 'laptops', 'fragrances', 'sunglasses', 'automotive', 'motorcycle',
   return (
@@ -31,7 +31,21 @@ const HeroSection = () => {
         <h2 className="categories-heading">Categories</h2>
 
         {/* //card section  */}
-        <div className="categories-card-section"></div>
+        <div className="categories-card-section">
+          {categories.map((item) => {
+            //iterating over all categories
+            return (
+              <section className="card">
+                <figure>
+                  <img src={item.img} alt="" />
+                </figure>
+                <figcaption>
+                  <p className="title">{item.title}</p>
+                </figcaption>
+              </section>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

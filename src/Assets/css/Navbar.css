@@ -5,9 +5,10 @@
 .navbar {
     height: 3rem;
     position: sticky;
-    top: 0;
+    width: 100%;
+    top: 0rem;
     background-color: #060736;
-    z-index: 10;
+    z-index: 100000;
 }
 
 
@@ -20,7 +21,7 @@
     font-size: 2rem;
     width: 50%;
     color: #ffffff;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
     position: relative;
     margin-top: 0.4rem;
@@ -31,7 +32,7 @@
     display: flex;
     justify-content: flex-end;
     width: 50%;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     align-items: center;
 }

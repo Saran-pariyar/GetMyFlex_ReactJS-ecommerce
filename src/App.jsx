@@ -14,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Navbar cart={cart} setShowCart={setShowCart} />
         <Cart cart={cart} setShowCart={setShowCart} />
+        {/* <HeroSection /> */}
         <Routes>
           <Route path="/" element={<HeroSection />} />
           {/* <Route path="/home" element={<HeroSection />} /> */}
