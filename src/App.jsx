@@ -16,8 +16,8 @@ function App() {
         <Cart cart={cart} setShowCart={setShowCart} />
         <HeroSection />
         <Routes>
-          {/* <Route path="/" element={<HeroSection />} /> */}
-          {/* <Route path="/home" element={<HeroSection />} /> */}
+          <Route path="/" element={<HeroSection />} />
+          <Route exact path="/home" element={<HeroSection />} />
 
           <Route path="/product" element={<Product />} />
         </Routes>

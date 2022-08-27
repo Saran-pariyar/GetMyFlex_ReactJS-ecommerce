@@ -169,3 +169,18 @@
     color: #fff;
     cursor: pointer;
 }
+
+@media only screen and (max-width:800px) {
+    .categories-card-section {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .card figure img {
+        width: 100%;
+    }
+}
