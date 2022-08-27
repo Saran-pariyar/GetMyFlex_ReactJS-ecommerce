@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/GetMyFlex_ReactJS-ecommerce/static/css/main.0c904970.css",
-    "main.js": "/GetMyFlex_ReactJS-ecommerce/static/js/main.393fe248.js",
+    "main.css": "/GetMyFlex_ReactJS-ecommerce/static/css/main.f5718426.css",
+    "main.js": "/GetMyFlex_ReactJS-ecommerce/static/js/main.9d7c5ce7.js",
     "static/media/mac.jpg": "/GetMyFlex_ReactJS-ecommerce/static/media/mac.c15a2923ad7338678d8c.jpg",
     "static/media/mobile.jpg": "/GetMyFlex_ReactJS-ecommerce/static/media/mobile.14818f7fca3ac6d7df50.jpg",
     "static/media/neon_woman.jpg": "/GetMyFlex_ReactJS-ecommerce/static/media/neon_woman.0a1caa2a38908425a6ba.jpg",
     "static/media/sunglass.jpg": "/GetMyFlex_ReactJS-ecommerce/static/media/sunglass.0769d108cef6fb19078b.jpg",
     "index.html": "/GetMyFlex_ReactJS-ecommerce/index.html",
-    "main.0c904970.css.map": "/GetMyFlex_ReactJS-ecommerce/static/css/main.0c904970.css.map",
-    "main.393fe248.js.map": "/GetMyFlex_ReactJS-ecommerce/static/js/main.393fe248.js.map"
+    "main.f5718426.css.map": "/GetMyFlex_ReactJS-ecommerce/static/css/main.f5718426.css.map",
+    "main.9d7c5ce7.js.map": "/GetMyFlex_ReactJS-ecommerce/static/js/main.9d7c5ce7.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c904970.css",
-    "static/js/main.393fe248.js"
+    "static/css/main.f5718426.css",
+    "static/js/main.9d7c5ce7.js"
   ]
 }
