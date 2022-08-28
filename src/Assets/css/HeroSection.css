@@ -173,14 +173,43 @@
 @media only screen and (max-width:800px) {
     .categories-card-section {
         flex-direction: column;
+
+        border: 2px solid white;
+        /* text-align: center;
+        justify-content: center;
+        align-items: center; */
     }
 
     .card {
-        width: 90%;
-        margin: 1rem 0;
+        width: 100%;
+        /* margin: 1rem 0; */
+        border: 2px solid red;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+
+
     }
 
     .card figure img {
         width: 100%;
+    }
+
+    .categories-card-section .card figcaption {
+        /* width: 100%; */
+        position: relative;
+        top: -3.5rem;
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        padding: .5rem;
+        color: #e71336;
+        border: 2px solid #e71336;
+        transition: .4s all;
+    }
+
+    .categories-card-section .card figcaption:hover {
+        color: #fff;
+        background: #e71336;
     }
 }
