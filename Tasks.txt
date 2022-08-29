@@ -2,6 +2,9 @@
 4. Learn and use dummy api (learn to select products based on their categories) - ( https://dummyjson.com/docs/products )
 1. build side cart working - (make the number apper in cart)
 
+
+make the items description and all 3 images show when we click on the product item by opening a new modal 
+
 make the send message form working in portfolio website and also add projects/works in it, it will be checked !!
 
 Leran firebase and user authentication

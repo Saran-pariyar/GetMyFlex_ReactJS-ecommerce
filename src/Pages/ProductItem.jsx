@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import "../Assets/css/ProductItem.css";
+import ProductCard from "../Components/ProductCard";
 
 const ProductItem = ({ category }) => {
   //this will contain the parsed api data
+
   const [itemData, setItemData] = useState([]);
 
   //capitalize first letter of title
@@ -15,6 +17,7 @@ const ProductItem = ({ category }) => {
       const url = `https://dummyjson.com/products/category/${category}`;
       let data = await fetch(url);
       let parsedData = await data.json();
+      console.log(parsedData.products[0]);
 
       //saving data in state var to use it below
       setItemData(parsedData.products);
@@ -27,15 +30,10 @@ const ProductItem = ({ category }) => {
 
   return (
     <section className="product-section">
-      {category}
+      {/* {category} */}
       {itemData.map((element, index) => {
-        return (
-          <div key={index}>
-            {index} <br />
-            {element.title} <br />
-            {element.rating} <img src={element.images[1]} alt="" />
-          </div>
-        );
+        //iterates over all the products
+        return <ProductCard product={element} key={index} />;
       })}
     </section>
   );
