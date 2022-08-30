@@ -1,3 +1,15 @@
 .product-section {
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (max-width:800px) {
+    .product-section {
+        flex-direction: column;
+    }
 }

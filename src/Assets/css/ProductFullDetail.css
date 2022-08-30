@@ -1,0 +1,15 @@
+.product-full-detail-section {
+    padding: 1rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product-detail {
+    height: 20rem;
+    width: 40rem;
+    border: 2px solid black;
+}

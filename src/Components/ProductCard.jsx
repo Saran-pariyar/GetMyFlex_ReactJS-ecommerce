@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import ProductFullDetail from "./ProductFullDetail";
+import "../Assets/css/ProductCard.css";
 
 const ProductCard = ({ product }) => {
   //   brand: "Apple";
@@ -18,31 +20,27 @@ const ProductCard = ({ product }) => {
   //   stock: 94;
   //   thumbnail: "https://dummyjson.com/image/i/products/1/thumbnail.jpg";
   //   title: "iPhone 9";
+
+  //will show the section where we can see full details of item
+  const [showDetails, setShowDetails] = useState(false);
   return (
-    <div>
-      {product.brand} <br />
-      {product.category} <br />
-      {product.description} <br />
-      {product.discountPercentage} <br />
-      {product.id} <br />
-      {product.images.map((item, index) => {
-        return (
-          <div className="" key={index}>
-            <img src={item} alt="" />
-          </div>
-        );
-      })}{" "}
-      <br />
-      image end
-      <hr />
-      {product.price} <br />
-      {product.rating} <br />
-      {product.stock} <br />
-      {product.thumbnail} <br />
-      {product.title} <br />
-      <hr />
-      <hr />
-    </div>
+    <section className="product-card-section">
+      <figure className="product-image-section">
+        <img src={product.images[0]} alt={product.title} />
+      </figure>
+      <figcaption className="text-section">
+        <p className="product-title">{product.title.slice(0, 20) + "..."}</p>
+        {/* <hr /> */}
+        <p className="product-price"> {product.price} </p>
+        <p className="product-rating"> {product.rating} </p>
+        <p className="product-stock"> {product.stock} </p>
+        <p className="product-description">
+          {" "}
+          {product.description.slice(0, 40) + "..."}
+        </p>
+        <h />
+      </figcaption>
+    </section>
   );
 };
 

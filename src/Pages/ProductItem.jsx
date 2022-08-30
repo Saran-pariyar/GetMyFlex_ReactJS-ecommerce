@@ -17,7 +17,7 @@ const ProductItem = ({ category }) => {
       const url = `https://dummyjson.com/products/category/${category}`;
       let data = await fetch(url);
       let parsedData = await data.json();
-      console.log(parsedData.products[0]);
+      // console.log(parsedData.products[0]);
 
       //saving data in state var to use it below
       setItemData(parsedData.products);

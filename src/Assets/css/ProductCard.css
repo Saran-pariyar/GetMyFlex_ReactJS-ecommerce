@@ -1,0 +1,51 @@
+.product-card-section {
+    border: 2px solid yellow;
+    width: 22vw;
+    padding: 1rem;
+    height: 60vh;
+    margin: .5rem;
+}
+
+.product-image-section {
+    border-radius: 0;
+
+}
+
+.product-image-section img {
+    border-radius: 0;
+    width: 100%;
+    max-height: 8rem;
+
+}
+
+.text-section {
+    border-radius: 0;
+
+}
+
+
+.product-title {
+    border-radius: 0;
+}
+
+.product-price {
+    border-radius: 0;
+}
+
+.product-rating {
+    border-radius: 0;
+}
+
+.product-stock {
+    border-radius: 0;
+}
+
+.product-description {
+    border-radius: 0;
+}
+
+@media only screen and (max-width:900px) {
+    .product-card-section {
+        width: auto;
+    }
+}
