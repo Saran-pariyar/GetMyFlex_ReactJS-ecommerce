@@ -22,6 +22,7 @@ const ProductCard = ({ product }) => {
   //   title: "iPhone 9";
 
   //will show the section where we can see full details of item
+
   const [showDetails, setShowDetails] = useState(false);
   return (
     <section className="product-card-section">
@@ -29,14 +30,14 @@ const ProductCard = ({ product }) => {
         <img src={product.images[0]} alt={product.title} />
       </figure>
       <figcaption className="text-section">
-        <p className="product-title">{product.title.slice(0, 20) + "..."}</p>
+        <p className="product-title">{product.title.slice(0, 15) + "..."}</p>
         {/* <hr /> */}
-        <p className="product-price"> {product.price} </p>
+        <p className="product-price"> ${product.price} </p>
         <p className="product-rating"> {product.rating} </p>
         <p className="product-stock"> {product.stock} </p>
         <p className="product-description">
           {" "}
-          {product.description.slice(0, 40) + "..."}
+          {product.description.slice(0, 35) + "..."}
         </p>
         <h />
       </figcaption>

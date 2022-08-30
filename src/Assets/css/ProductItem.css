@@ -5,11 +5,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
 
 }
 
 @media only screen and (max-width:800px) {
     .product-section {
         flex-direction: column;
+        padding: 1rem;
     }
 }
