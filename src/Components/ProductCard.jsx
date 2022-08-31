@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ProductFullDetail from "./ProductFullDetail";
 import "../Assets/css/ProductCard.css";
+import { Rating } from "react-simple-star-rating";
+import { GiShoppingCart } from "react-icons/gi";
 
 const ProductCard = ({ product }) => {
   //   brand: "Apple";
@@ -32,14 +34,22 @@ const ProductCard = ({ product }) => {
       <figcaption className="text-section">
         <p className="product-title">{product.title.slice(0, 15) + "..."}</p>
         {/* <hr /> */}
-        <p className="product-price"> ${product.price} </p>
+        <p className="product-price">
+          <span>Price:</span> ${product.price}{" "}
+        </p>
         <p className="product-rating"> {product.rating} </p>
-        <p className="product-stock"> {product.stock} </p>
+        <Rating readonly={true} initialValue={product.rating} />
+        <p className="product-stock">
+          <span>Stock : </span> {product.stock}{" "}
+        </p>
         <p className="product-description">
-          {" "}
           {product.description.slice(0, 35) + "..."}
         </p>
         <h />
+        <button className="add-to-cart-btn">
+          Add to cart
+          <GiShoppingCart className="shopping-tray" />
+        </button>
       </figcaption>
     </section>
   );
